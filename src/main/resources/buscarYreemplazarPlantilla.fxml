@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <GridPane BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -25,7 +25,7 @@
             <RowConstraints />
         </rowConstraints>
          <children>
-            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.halignment="RIGHT">
+            <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" GridPane.halignment="RIGHT">
                <children>
                   <Label contentDisplay="TOP" text="Buscar:" VBox.vgrow="ALWAYS">
                      <VBox.margin>
@@ -41,7 +41,7 @@
             </VBox>
             <VBox GridPane.columnIndex="2" GridPane.hgrow="SOMETIMES" GridPane.rowSpan="3">
                <children>
-                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Buscar">
+                  <Button defaultButton="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Buscar">
                      <VBox.margin>
                         <Insets top="5.0" />
                      </VBox.margin>
@@ -90,21 +90,17 @@
                     </columnConstraints>
                     <rowConstraints>
                         <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="NEVER" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="NEVER" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="NEVER" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="NEVER" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="NEVER" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="NEVER" />
                     </rowConstraints>
                      <children>
-                        <CheckBox mnemonicParsing="false" text="Mayúsculas y minúsculas" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-                        <CheckBox mnemonicParsing="false" text="Resaltar resultados" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                        <CheckBox mnemonicParsing="false" text="Mayúsculas y minúsculas" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <CheckBox mnemonicParsing="false" text="Resaltar resultados" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                            <GridPane.margin>
                               <Insets left="5.0" />
                            </GridPane.margin>
                         </CheckBox>
-                        <CheckBox mnemonicParsing="false" text="Buscar hacia atrás" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-                        <CheckBox mnemonicParsing="false" text="Expresión regular" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                        <CheckBox mnemonicParsing="false" text="Buscar hacia atrás" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <CheckBox mnemonicParsing="false" text="Expresión regular" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                            <GridPane.margin>
                               <Insets right="40.0" />
                            </GridPane.margin>
